@@ -2,59 +2,88 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Accueil - Mon Site de Cours</title>
-  <link rel="stylesheet" href="style.css">
+  <title>L'Auditoire</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <h1>Bienvenue sur ton site de cours !</h1>
-  <nav>
-    <ul>
-      <li><a href="definitions.html">Définitions</a></li>
-      <li><a href="cours.html">Catégories de cours</a></li>
-      <li><a href="notes.html">Notes personnelles</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <ul>
-        <li>
-          <strong>Mesure</strong>
-          <p>En musique, une mesure est une division d'une œuvre musicale en segments de temps réguliers, <br>
-          permettant d'organiser sa structure. Chaque mesure contient un nombre fixe de temps, représenté par des valeurs de notes et de silences.</p>
-        </li>
-        <li>
-          <strong>Gamme</strong>
-          <p>Une gamme en musique est une suite ordonnée de notes musicales couvrant une octave.<br>
-          Elle définit l'espace tonal dans lequel une composition évolue et constitue la base des systèmes musicaux.</p>
-        </li>
-        <li>
-          <strong>Accord</strong>
-          <p>En musique, un accord est un ensemble de notes considéré comme formant un tout du point de vue de l'harmonie.</p>
-        </li>
-        <li>
-          <strong>Harmonie</strong>
-          <p>En musique, l'harmonie désigne la combinaison de plusieurs sons joués simultanément.</p>
-        </li>
-        <li>
-          <strong>Diatonique</strong>
-          <p>Accords/Notes appartenant à une gamme. L'accord Do majeur est diatonique à la gamme de Do Majeur, <br>
-          l'accord de Do mineur ne l'est pas car il utilise une note qui ne fait pas partie de la gamme : Mib.</p>
-        </li>
-        <li>
-          <strong>Armure</strong>
-          <p>L’armure en musique est un élément essentiel de la notation musicale, placé au début d’une portée juste après la clef, et parfois répété après une barre de mesure. L’armure indique les altérations (dièses ou bémols) <br>
-          qui affectent certaines notes tout au long d’une pièce ou d’une section de musique.</p>
-        </li>
-        <li>
-          <strong>Tempo</strong>
-          <p>Le Tempo, appelé aussi mouvement, est la vitesse d'exécution d'une œuvre ou, plus exactement, la fréquence de la pulsation.</p>
-        </li>
-        <li>
-          <strong>Arpège</strong>
-          <p>En musique, un arpège est une série de notes émises successivement et qui, considérées ensemble, forment un accord.</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <!-- HEADER -->
+  <div class="header-bar">
+    <div class="header-title">L’Auditoire</div>
+    <hr class="header-divider" />
+  </div>
+
+  <!-- HERO / TOP SECTION -->
+  <div class="hero-section">
+    <button class="explorer-btn">Explorer !</button>
+    <!-- White bottom curve (SVG for smoothness) -->
+    <svg class="bottom-curve" viewBox="0 0 1920 240" preserveAspectRatio="none">
+      <path d="M0,240 Q960,0 1920,240 L1920,240 L0,240 Z" fill="#f4fbfa"/>
+    </svg>
+  </div>
+
+  <!-- MAIN BOXES -->
+  <div class="main-content">
+    <div class="card-row">
+      <!-- Ressources -->
+      <div class="main-card">
+        <div class="main-card-icon">
+          <!-- Book SVG (with red bookmark) -->
+          <svg width="38" height="70" viewBox="0 0 38 70">
+            <rect x="0" y="0" width="38" height="70" fill="#072b55"/>
+            <rect x="15" y="0" width="4" height="26" fill="#e32c2e"/>
+          </svg>
+        </div>
+        <h3>Ressources</h3>
+        <div class="main-card-desc">
+          blablablabla<br>blabla
+        </div>
+      </div>
+      <!-- Théorie Musicale -->
+      <div class="main-card">
+        <div class="main-card-icon">
+          <!-- Magnifier SVG -->
+          <svg width="70" height="70" viewBox="0 0 70 70">
+            <circle cx="28" cy="28" r="16" stroke="#072b55" stroke-width="5" fill="none"/>
+            <line x1="43" y1="43" x2="65" y2="65" stroke="#072b55" stroke-width="5" />
+          </svg>
+        </div>
+        <h3>Théorie Musicale</h3>
+        <div class="main-card-desc">
+          blablablabla<br>blabla
+        </div>
+      </div>
+      <!-- Boîte à Outils -->
+      <div class="main-card">
+        <div class="main-card-icon">
+          <!-- Open box SVG -->
+          <svg width="60" height="48" viewBox="0 0 60 48">
+            <polygon points="0,40 20,40 20,8 0,16" fill="#072b55"/>
+            <polygon points="20,8 60,0 60,32 20,40" fill="#32546a"/>
+          </svg>
+        </div>
+        <h3>Boîte à Outils</h3>
+        <div class="main-card-desc">
+          blablablabla<br>blabla
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER / BOTTOM BAR for first screen-->
+  <div class="footer-bar"></div>
+
+  <!-- PAGE 2 CONTENT -->
+  <div class="section2">
+    <div class="section2-content">
+      <div class="section2-list">
+        <button class="section2-btn"><span class="bar"></span>Définitions</button>
+        <button class="section2-btn"><span class="bar"></span>Théorie</button>
+        <button class="section2-btn"><span class="bar"></span>Boîte à outils</button>
+        <button class="section2-btn"><span class="bar"></span>Réseaux</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"></div>
 </body>
 </html>
