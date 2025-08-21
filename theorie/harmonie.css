@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #191919;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: 170px;
+  background: #0e2340;
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 32px;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: color 0.2s;
+  padding-left: 18px;
+}
+
+.sidebar nav ul li.active a,
+.sidebar nav ul li a:hover {
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 170px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.header-bar {
+  background: #0e2340;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.content {
+  padding: 24px 48px 24px 48px;
+  max-width: 950px;
+}
+
+.first-list {
+  margin-top: 24px;
+  margin-bottom: 18px;
+  margin-left: 0;
+  padding-left: 24px;
+  font-size: 1.45em;
+}
+
+.first-list > li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+.first-list ol {
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-left: 28px;
+  font-size: 0.98em;
+}
+
+.first-list ol li {
+  list-style-type: decimal;
+}
+
+.bullets {
+  margin-top: 18px;
+  padding-left: 22px;
+  font-size: 1.35em;
+}
+
+.bullets li {
+  list-style-type: disc;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 100px;
+    padding-top: 40px;
+  }
+  .main-content {
+    margin-left: 100px;
+  }
+  .header-bar {
+    font-size: 1.1em;
+    padding: 8px 12px;
+  }
+  .content {
+    padding: 12px 10px;
+  }
+}
